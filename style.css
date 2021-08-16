@@ -45,7 +45,7 @@ section {
 }
 
 .animated-text h3 {
-  color: #4e9eff;
+  color: #d67244;
   font-size: 3em;
   font-weight: 700;
   line-height: 70px;
@@ -76,7 +76,7 @@ section {
 
 .btn {
   color: #fff;
-  background: #3a6cf4;
+  background: #d67244;
   font-size: 1em;
   font-weight: 600;
   display: inline-block;
@@ -89,7 +89,7 @@ section {
 }
 
 .btn:hover {
-  background: #235bf6;
+  background: #eba40c;
 }
 
 .media-icons {
@@ -102,10 +102,10 @@ section {
   margin-right: 30px;
 }
 
-.header {
+header {
   z-index: 999;
   position: fixed;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   width: 100%;
@@ -114,4 +114,114 @@ section {
   justify-content: space-between;
   align-items: center;
   transition: 0.5s ease;
+}
+
+header.sticky {
+  background: #3a6cf4;
+  padding: 10px 200px;
+}
+
+header .brand {
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation a {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+header .navigation a:hover {
+  color: #3a6cf4;
+}
+
+header.sticky .navigation a:hover {
+  color: #000;
+}
+
+body {
+  min-height: 110vh;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-title {
+  position: relative;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 60px;
+}
+
+.section-title:before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  width: 140px;
+  height: 4px;
+  background: #3a6cf4;
+  transform: translateX(-50%);
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #3a6cf4;
+  transform: translateX(-50%);
+}
+
+.about .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about .content .col-left {
+  position: relative;
+  width: 45%;
+}
+
+.about .content .col-right {
+  position: relative;
+  width: 50%;
+}
+
+.about .content .col-left .img-card {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+}
+
+.about .content .col-left .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
